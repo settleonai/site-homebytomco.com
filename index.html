@@ -64,7 +64,7 @@ nav .container {
 .hero {
   position: relative; min-height: 90vh; display: flex; align-items: center;
   background: linear-gradient(135deg, rgba(27,42,65,0.92) 0%, rgba(27,42,65,0.78) 100%),
-    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80') center/cover no-repeat;
+    url('') center/cover no-repeat;
 }
 .hero-content { position: relative; z-index: 2; max-width: 680px; padding: 80px 0; }
 .hero-badge {
@@ -229,18 +229,18 @@ footer ul a:hover { color: #D97706; }
   .about-features { grid-template-columns: 1fr; }
 }
 
-.contact-form-section{padding:60px 20px;background:#f8fafc}
-.contact-form-section h2{font-size:2rem;margin-bottom:8px;text-align:center;font-weight:700}
-.contact-form-section .subtitle{text-align:center;color:#666;margin-bottom:32px;font-size:1.05rem}
-.contact-form{max-width:520px;margin:0 auto;background:#fff;border-radius:12px;padding:32px;box-shadow:0 4px 24px rgba(0,0,0,0.08)}
-.contact-form label{display:block;font-weight:600;margin-bottom:4px;font-size:0.95rem}
-.contact-form input,.contact-form textarea{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;font-size:1rem;font-family:inherit;margin-bottom:16px;transition:border-color 0.2s}
-.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:#1e3a5f}
-.contact-form textarea{min-height:100px;resize:vertical}
-.contact-form button{width:100%;background:#f59e0b;color:#1a1a1a;padding:14px;border:none;border-radius:8px;font-weight:700;font-size:1.05rem;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s}
-.contact-form button:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(245,158,11,0.4)}
+.contact-form-section{padding:80px 20px;background:#fff;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB}
+.contact-form-section h2{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(28px,4vw,40px);color:#1B2A41;margin-bottom:8px;text-align:center}
+.contact-form-section .subtitle{text-align:center;color:#6B7280;margin-bottom:36px;font-size:1.05rem;max-width:500px;margin-left:auto;margin-right:auto}
+.contact-form{max-width:480px;margin:0 auto;background:#F8FAFC;border-radius:16px;padding:36px;box-shadow:0 4px 24px rgba(0,0,0,0.06);border:1px solid #E5E7EB}
+.contact-form label{display:block;font-weight:600;margin-bottom:4px;font-size:0.9rem;color:#1B2A41}
+.contact-form input,.contact-form textarea{width:100%;padding:12px 16px;border:1px solid #d1d5db;border-radius:8px;font-size:1rem;font-family:'Inter',system-ui,sans-serif;margin-bottom:14px;transition:border-color 0.2s,box-shadow 0.2s;background:#fff}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:#D97706;box-shadow:0 0 0 3px rgba(217,119,6,0.1)}
+.contact-form textarea{min-height:90px;resize:vertical}
+.contact-form button{width:100%;background:#D97706;color:#fff;padding:16px;border:none;border-radius:8px;font-weight:700;font-size:1.05rem;cursor:pointer;transition:background 0.2s,transform 0.2s;font-family:'Inter',system-ui,sans-serif}
+.contact-form button:hover{background:#B45309;transform:translateY(-1px);box-shadow:0 8px 24px rgba(217,119,6,0.3)}
 .contact-form button:disabled{opacity:0.6;cursor:not-allowed;transform:none;box-shadow:none}
-.form-status{text-align:center;margin-top:16px;font-size:0.95rem;min-height:24px}
+.form-status{text-align:center;margin-top:14px;font-size:0.9rem;min-height:20px}
 .form-status.success{color:#16a34a}
 .form-status.error{color:#dc2626}
 </style>
@@ -265,6 +265,8 @@ footer ul a:hover { color: #D97706; }
       <li><a href="#about">About</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="tel:+14159079070" class="nav-cta">Get Free Quote</a></li>
+    
+      <li><a href="#contact" style="background:#B45309;color:#fff !important;padding:10px 22px;border-radius:6px;font-weight:600;font-size:0.9rem;display:inline-block;">Free Estimate</a></li>
     </ul>
     <button class="mobile-toggle" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -329,7 +331,7 @@ footer ul a:hover { color: #D97706; }
     </div>
     <div class="services-grid">
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Full Home Remodeling">
+        
         <div class="service-card-body">
           <h3>Full Home Remodeling</h3>
           <p>Whole-home transformations designed around your lifestyle. We handle every detail from permits to final walkthrough.</p>
@@ -337,7 +339,7 @@ footer ul a:hover { color: #D97706; }
         </div>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80" alt="Kitchen Remodeling">
+        
         <div class="service-card-body">
           <h3>Kitchen Remodeling</h3>
           <p>Custom cabinetry, premium countertops, and thoughtful layouts that make your kitchen the heart of the home.</p>
@@ -345,7 +347,7 @@ footer ul a:hover { color: #D97706; }
         </div>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Bathroom Renovation">
+        
         <div class="service-card-body">
           <h3>Bathroom Renovation</h3>
           <p>Spa-inspired bathrooms with premium tile, custom vanities, and fixtures that elevate your daily routine.</p>
@@ -353,7 +355,7 @@ footer ul a:hover { color: #D97706; }
         </div>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&q=80" alt="ADU Construction">
+        
         <div class="service-card-body">
           <h3>ADU Construction</h3>
           <p>Accessory dwelling units built to code and designed to maximize your property's value and livable space.</p>
@@ -361,7 +363,7 @@ footer ul a:hover { color: #D97706; }
         </div>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Home Additions">
+        
         <div class="service-card-body">
           <h3>Home Additions</h3>
           <p>Expand your living space with seamless room additions that blend naturally with your home's existing architecture.</p>
@@ -369,7 +371,7 @@ footer ul a:hover { color: #D97706; }
         </div>
       </div>
       <div class="service-card">
-        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Outdoor Living">
+        
         <div class="service-card-body">
           <h3>Outdoor Living</h3>
           <p>Decks, patios, and outdoor kitchens designed for the Bay Area climate. Built for entertaining and relaxation.</p>
@@ -423,7 +425,7 @@ footer ul a:hover { color: #D97706; }
   <div class="container">
     <div class="about-grid">
       <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Home by Tom Co. Team">
+        
       </div>
       <div class="about-content">
         <div class="section-label">About Our Company</div>
